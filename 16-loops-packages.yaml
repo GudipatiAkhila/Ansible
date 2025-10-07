@@ -1,13 +1,13 @@
 - name: install packages
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: print names
     ansible.builtin.package:
     name: "{{ item }}"
     state: latest
     loop:
-    - Akhila
-    - mom
-    - dad
-    - god
+    - nginx
+    - mysql
+    - zip
