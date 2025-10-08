@@ -4,6 +4,7 @@
   vars:
     technologies: Devops, linux,  Ansible # string
     name: Gudipati Akhila
+    gmail: AKHI@GMAIL.COM
     # dictonary 
 
     tags:
@@ -49,3 +50,7 @@
   - name: convert uppercase
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
+
+  - name: convert lowercase
+    ansible.builtin.debug:
+      msg: "{{ gmail | lower }}"
