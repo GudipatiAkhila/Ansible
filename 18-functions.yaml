@@ -5,9 +5,9 @@
     technologies: Devops, linux,  Ansible # string
     # dictonary 
 
-  tags:
-    Application: payment
-    Environment: dev
+    tags:
+     Application: payment
+     Environment: dev
 
   tasks: 
   - name: default variable
