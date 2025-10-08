@@ -5,6 +5,7 @@
     technologies: Devops, linux,  Ansible # string
     name: Gudipati Akhila
     gmail: AKHI@GMAIL.COM
+    ipaddress: "19222.168.0.1"
     # dictonary 
 
     tags:
@@ -54,3 +55,7 @@
   - name: convert lowercase
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
+
+  - name: check IP is valid or not
+    ansible.builtin.debug:
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
