@@ -3,6 +3,7 @@
   connection: local
   vars:
     technologies: Devops, linux,  Ansible # string
+    name: Gudipati Akhila
     # dictonary 
 
     tags:
