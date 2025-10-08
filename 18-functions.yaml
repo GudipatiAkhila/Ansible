@@ -3,6 +3,11 @@
   connection: local
   vars:
     technologies: Devops, linux,  Ansible # string
+    # dictonary 
+
+  tags:
+    Application: payment
+    Environment: dev
   tasks: 
   - name: default variable
     ansible.builtin.debug:
@@ -13,3 +18,4 @@
   - name: convert string into list
     ansible.builtin.debug:
       msg: "Technologies are: {{ technologies | split(',')}}"
+      msg: "tags are: {{ tags | split(',')}}"
